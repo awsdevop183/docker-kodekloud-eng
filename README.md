@@ -25,3 +25,23 @@
 ## To mount host volume on container
 
 ``` docker run -d --name nautilus -v /var/www/html:/usr/local/apache2/htdocs -p 8080:80 httpd ```
+
+
+## To pull a docker image from Docker hub
+
+``` docker pull image_name:tag ```
+
+
+## To tag an image
+
+``` docker tag image_name:tag new_image:tag ```
+
+## To create an image from a container
+
+``` docker commit container_name image_name ```
+
+
+
+
+
+
