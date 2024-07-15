@@ -15,7 +15,7 @@
 
 
 
-## to Remove it forcefully
+## To Remove it forcefully
 
 ``` docker rm -f cotnainer_name ```
 
@@ -40,8 +40,13 @@
 
 ``` docker commit container_name image_name ```
 
+# To create a Docker network
+
+``` docker network create -d bridge --subnet 192.168.0.0/24 --ip-range 192.168.0.0/24 blog ```
 
 
+# To save an image as TAR file and export it to another machine, and then load
 
+``` docker save -o file.tar image_name ```
 
-
+``` docker load -i file.tar ```
